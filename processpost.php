@@ -16,6 +16,7 @@ $file = fopen('post/'.$title.'.txt', 'w'); //OUVERTURE FICHIER
 fwrite($file, $content); //ECRITURE FICHIER 
 fclose($file); //FERMETURE FICHIER 
 echo '<p> Well done! You have created a new post !</p>';
+header('location: index.php');
 
 
 ?>
